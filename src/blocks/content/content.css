@@ -2,4 +2,6 @@
     margin: 0 auto;
     display: flex;
     color: #333333;
+    align-items: center;
+    justify-content: center;
 }

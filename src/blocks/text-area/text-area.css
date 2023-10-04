@@ -1,0 +1,6 @@
+.text-area {
+    margin: 0 auto;
+    display: flex;
+    width: 736px;
+    justify-content: space-between;
+}

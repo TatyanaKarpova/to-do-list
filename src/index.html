@@ -13,11 +13,13 @@
     </header>
     <main class="content">
         <section class="text-area">
-            <div class="text-area__container">
-                <form class="text-area__form"></form>
-                <button class="text-area__button" type="submit"></button>
-            </div>
-
+                <form class="text-area__form">
+                    <label class="text-area__field">
+                        <input class="text-area__input" type="text" placeholder="Добавить новую задачу" required minlength="2" maxlength="100">
+                        <span class="error"></span>
+                    </label>
+                </form>
+                <button class="text-area__button" type="submit">Создать</button>
         </section>
         <section class="tasks-number">
 

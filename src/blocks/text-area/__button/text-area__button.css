@@ -1,0 +1,19 @@
+.text-area__button {
+    margin: 0;
+    padding: 16px;
+    background-color: #1E6F9F;
+    color: #F2F2F2;
+    width: 90px;
+    height: 54px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: none;
+    font-size: 14px;
+    font-weight: 700;
+    transition: opacity 0.15s;
+}
+
+.text-area__button:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}

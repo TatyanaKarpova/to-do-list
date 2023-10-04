@@ -1,0 +1,24 @@
+.text-area__input {
+    margin: 0 8px 0 0;
+    padding: 0 0 0 8px;
+    background: #262626;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    width: 638px;
+    height: 54px;
+    color: #F2F2F2;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.text-area__input:focus {
+    outline-color: #87CEFA;
+}
+
+.text-area__input::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+}
