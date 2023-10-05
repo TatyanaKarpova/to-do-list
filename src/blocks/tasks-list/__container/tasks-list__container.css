@@ -1,0 +1,8 @@
+.tasks-list__container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    list-style-type: none;
+}

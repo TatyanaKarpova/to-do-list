@@ -1,0 +1,9 @@
+.tasks-list__item {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: start;
+    color: #F2F2F2;
+    display: flex;
+}

@@ -11,8 +11,22 @@
 
 @import url(../blocks/text-area/text-area.css);
 @import url(../blocks/text-area/__field/text-area__field.css);
+@import url(../blocks/text-area/__form/text-area__form.css);
 @import url(../blocks/text-area/__input/text-area__input.css);
 @import url(../blocks/text-area/__button/text-area__button.css);
+
+@import url(../blocks/tasks-number/tasks-number.css);
+@import url(../blocks/tasks-number/__container/tasks-number__container.css);
+@import url(../blocks/tasks-number/__text/tasks-number__text.css);
+@import url(../blocks/tasks-number/__text/_color-violet/tasks-number__text_color-violet.css);
+@import url(../blocks/tasks-number/__wrapper/tasks-number__wrapper.css);
+@import url(../blocks/tasks-number/__number/tasks-number__number.css);
+
+@import url(../blocks/tasks-list/tasks-list.css);
+@import url(../blocks/tasks-list/__container/tasks-list__container.css);
+@import url(../blocks/tasks-list/__item/tasks-list__item.css);
+@import url(../blocks/tasks-list/__text/tasks-list__text.css);
+@import url(../blocks/tasks-list/__delete-button/tasks-list__delete-button.css);
 
 @import url(../blocks/footer/footer.css/);
 @import url(../blocks/footer/__copyright/footer__copyright.css);
