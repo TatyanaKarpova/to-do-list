@@ -1,0 +1,13 @@
+.tasks-list__delete-button {
+    background-image: url(../../../images/delete-icon.svg);
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: initial;
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

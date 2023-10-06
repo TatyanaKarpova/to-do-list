@@ -1,6 +1,6 @@
 .tasks-number {
     display: flex;
     justify-content: space-between;
-    width: 100%;
     margin: 64px 0 0 0;
+    width: 100%;
 }

@@ -5,4 +5,5 @@
     flex-direction: column;
     text-decoration: none;
     list-style-type: none;
+    gap: 12px;
 }
