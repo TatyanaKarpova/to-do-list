@@ -28,5 +28,10 @@
 @import url(../blocks/tasks-list/__text/tasks-list__text.css);
 @import url(../blocks/tasks-list/__delete-button/tasks-list__delete-button.css);
 
+@import url(../blocks/tasks-zero/tasks-zero.css);
+@import url(../blocks/tasks-zero/__image/tasks-zero__image.css);
+@import url(../blocks/tasks-zero/__text/tasks-zero__text.css);
+@import url(../blocks/tasks-zero/__text/_font-bold/tasks-zero__text_font-bold.css);
+
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__copyright/footer__copyright.css);

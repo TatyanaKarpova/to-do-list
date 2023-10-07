@@ -10,4 +10,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: opacity 0.15s;
+}
+
+.tasks-list__delete-button:hover {
+    cursor: pointer;
+    opacity: 0.6;
 }
