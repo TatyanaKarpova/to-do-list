@@ -1,43 +1,48 @@
-const taskFormElement = document.querySelector('.text-area__form');
-const taskInputElement = taskFormElement.querySelector('.text-area__input'); 
-const taskTemplateElement = document.querySelector('.tasks-list__template');
-const taskListElement = document.querySelector('.tasks-list__container');
-const cardListElement = document.querySelector('.elements__items'); 
+const taskFormElement = document.querySelector(".text-area__form");
+const taskInputElement = taskFormElement.querySelector(".text-area__input");
+const taskTemplateElement = document.querySelector(".tasks-list__template");
+const taskListElement = document.querySelector(".tasks-list__container");
+const taskEmptyElement = document.querySelector(".tasks-zero");
 
 const taskInitialElements = [
-    {  
-      name: 'Дочитать Мистер Вечный Канун', 
-    },  
-    {  
-      name: 'Приготовить имбирное печенье',
-    }  
-]; 
+  {
+    name: "Дочитать Мистер Вечный Канун",
+  },
+  {
+    name: "Приготовить имбирное печенье",
+  },
+];
 
-function createTaskElement(text) {
-    const taskElement = taskTemplateElement.content.cloneNode(true);
+function createTaskElement(task) {
+  const taskElement = taskTemplateElement.content.cloneNode(true);
+  taskElement.querySelector(".tasks-list__text").textContent = task;
+  taskElement
+    .querySelector(".tasks-list__delete-button")
+    .addEventListener("click", handleTaskDelete);
+  return taskElement;
+}
 
-    taskElement.querySelector('.tasks-list__text').textContent = text;  
-    taskElement.querySelector('.tasks-list__delete-button').addEventListener('click', handleTaskDelete);
+function handleTaskDelete(evt) {
+  const itemElement = evt.target.closest(".tasks-list__item");
+  itemElement.remove();
+}
 
-    return taskElement;  
-};
+function handleTaskFormSubmit(evt) {
+  evt.preventDefault();
+  const task = taskInputElement.value;
+  createTaskElement(task);
+  taskListElement.prepend(createTaskElement(task));
+  evt.target.reset();
+}
 
-function handleTaskDelete (evt) {
-    const itemElement = evt.target.closest('.tasks-list__item');  
-    itemElement.remove(); 
-};
-
-function handleTaskFormSubmit (evt) {
-    evt.preventDefault();  
-    const taskText = taskInputElement.value; 
-    createTaskElement(taskText);  
-    taskListElement.prepend(createTaskElement(taskText));  
-    evt.target.reset();
-};
-
-taskInitialElements.forEach((element) => {
-    const taskInitialElement = createTaskElement(element.name);  
-    taskListElement.prepend(taskInitialElement);  
+taskInitialElements.forEach((task) => {
+  const taskInitialElement = createTaskElement(task.name);
+  taskListElement.prepend(taskInitialElement);
 });
 
-taskFormElement.addEventListener('submit', handleTaskFormSubmit); 
+/*
+if (taskListElement.children.length > 0) {
+    taskEmptyElement.classList.add('tasks-zero_invisable');
+}
+*/
+taskFormElement.addEventListener("submit", handleTaskFormSubmit);

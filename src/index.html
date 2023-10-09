@@ -14,12 +14,9 @@
     <main class="content">
         <section class="text-area section">
                 <form class="text-area__form">
-                    <label class="text-area__field">
-                        <input class="text-area__input" type="text" placeholder="Добавить новую задачу" required minlength="2" maxlength="100">
-                        <span class="error"></span>
-                    </label>
+                    <input class="text-area__input" type="text" placeholder="Добавить новую задачу" required minlength="2" maxlength="100">
+                    <button class="text-area__button" type="submit">Создать</button>
                 </form>
-                <button class="text-area__button" type="submit">Создать</button>
         </section>
         <section class="tasks-number section">
             <div class="tasks-number__container">
@@ -38,7 +35,7 @@
         <section class="tasks-list section">
             <div class="tasks-list__container"></div>
         </section>
-        <section class="tasks-zero">
+        <section class="tasks-zero tasks-zero_invisable">
             <img class="tasks-zero__image" alt="Изображение планшета" src="./images/clipboard.svg">
             <p class="tasks-zero__text tasks-zero__text_font-bold">У вас еще нет задач</p>
             <p class="tasks-zero__text">Создавайте задачи и организуйте свои дела</p>
